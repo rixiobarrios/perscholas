@@ -24,4 +24,24 @@ document.querySelector('.cool').style.color = 'red';
 // Hint: Check out the previous slide
 
 const a = document.querySelector('#link');
+// const a = document.getElementById("link"); // this is another way to target your element
 a.href = 'https://www.google.com';
+
+// 💪 You Do: Use querySelectorAllto select all of the elements with a class of commentand assign to a variable named commentEls.
+// console.log(commentEls)to verify it worked.
+
+let commentEls = document.querySelectorAll(".comment");
+console.log(commentEls);
+
+// Let's type this for...ofloop in the console to log each element:
+
+// for(let commentEl of commentEls) {
+// 	console.log(commentEl);
+// }
+
+// 💪 You Do: Add a for...ofloop to script.js that changes the font size all of the comment elements to 30px.
+// Hint: You must use a string like '30px'(just the number 30or the string of '30'will not work).
+
+for (const commentEl of commentEls) {
+    commentEl.style.color = "yellow";
+}
